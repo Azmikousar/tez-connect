@@ -1,90 +1,105 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
 
+# Page Config
 st.set_page_config(
     page_title="Tez Connect",
-    page_icon="🚀",
     layout="wide"
 )
-# -----------------------------
-# Sample Data
-# -----------------------------
 
-businesses = [
-    {
-        "Company": "ABC Textiles",
-        "Industry": "Manufacturing",
-        "Location": "Bangalore",
-        "Services": "Cotton Fabrics, Textile Export",
-        "Verified": "Yes"
-    },
-    {
-        "Company": "FreshMart Pvt Ltd",
-        "Industry": "Food Supply",
-        "Location": "Mysore",
-        "Services": "Organic Food Distribution",
-        "Verified": "Yes"
-    },
-    {
-        "Company": "Growthify Agency",
-        "Industry": "Marketing",
-        "Location": "Mumbai",
-        "Services": "Digital Marketing, Branding",
-        "Verified": "No"
-    },
-]
+# Title
+st.title("🚀 Tez Connect")
+st.subheader("B2B Networking Marketplace")
 
-# -----------------------------
 # Sidebar
-# -----------------------------
-
-st.sidebar.title("🚀 Tez Connect")
+st.sidebar.title("Navigation")
 
 menu = st.sidebar.radio(
-    "Navigation",
+    "Go To",
     [
         "Home",
         "Business Directory",
         "Marketplace",
         "Post Requirement",
-        "AI Business Assistant",
-        "Profile"
+        "AI Assistant"
     ]
 )
+
+# Home Page
 if menu == "Home":
-    st.title("🚀 Tez Connect")
-    st.subheader("B2B Networking Marketplace")
+    st.header("Welcome to Tez Connect")
 
-    st.markdown(
-        """
-        Welcome to **Tez Connect**, a platform where businesses can:
+    st.write("""
+    Connect with:
+    - Manufacturers
+    - Suppliers
+    - Distributors
+    - Startups
+    - Service Providers
+    """)
 
-        - Connect with suppliers
-        - Find distributors
-        - Discover business opportunities
-        - Post marketplace requirements
-        - Network with startups and enterprises
-        """
+    st.success("India's Smart B2B Networking Platform")
+
+# Business Directory
+elif menu == "Business Directory":
+
+    st.header("Business Directory")
+
+    businesses = pd.DataFrame({
+        "Company": [
+            "ABC Textiles",
+            "Fast Packaging",
+            "Digital Boost Agency"
+        ],
+        "Industry": [
+            "Textiles",
+            "Packaging",
+            "Marketing"
+        ],
+        "Location": [
+            "Bangalore",
+            "Mumbai",
+            "Delhi"
+        ]
+    })
+
+    st.dataframe(businesses)
+
+# Marketplace
+elif menu == "Marketplace":
+
+    st.header("Marketplace")
+
+    st.info("Latest Business Requirements")
+
+    st.card = st.container()
+
+    with st.card:
+        st.write("📦 Need 5000 Packaging Boxes")
+        st.button("Send Quote")
+
+# Post Requirement
+elif menu == "Post Requirement":
+
+    st.header("Post Your Requirement")
+
+    requirement = st.text_area(
+        "Describe Your Requirement"
     )
 
-    col1, col2, col3 = st.columns(3)
+    if st.button("Submit"):
+        st.success("Requirement Posted Successfully")
 
-    with col1:
-        st.metric("Businesses", "10,000+")
+# AI Assistant
+elif menu == "AI Assistant":
 
-    with col2:
-        st.metric("Verified Companies", "5,000+")
+    st.header("AI Business Assistant")
 
-    with col3:
-        st.metric("Marketplace Leads", "50,000+")
+    question = st.text_input(
+        "Ask Business Question"
+    )
 
-    st.divider()
-
-    st.subheader("🌟 Featured Businesses")
-
-    df = pd.DataFrame(businesses)
-    st.dataframe(df, use_container_width=True)
-
-
-
+    if question:
+        st.write(
+            f"AI Suggestion: Connect with suppliers related to '{question}'"
+        )
