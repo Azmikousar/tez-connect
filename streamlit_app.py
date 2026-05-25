@@ -142,3 +142,19 @@ text-decoration: underline;
 """
 
 st.markdown(footer, unsafe_allow_html=True)
+# Contact Information Section
+
+st.markdown("## 📞 CONTACT INFO")
+
+st.markdown("""
+📧 **support@tezconnect.in**
+
+📞 **+91 73961 80986**
+
+📞 **+91 97031 80986**
+
+📍 **Plot No. 45, 3rd Floor, Cyber Heights,  
+Hitech City Main Road,  
+Madhapur, Hyderabad – 500081,  
+Telangana, India**
+""")
