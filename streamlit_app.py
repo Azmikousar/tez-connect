@@ -142,7 +142,8 @@ text-decoration: underline;
 """
 
 st.markdown(footer, unsafe_allow_html=True)
-# Contact Information Section
+
+
 
 st.markdown("## 📞 CONTACT INFO")
 
