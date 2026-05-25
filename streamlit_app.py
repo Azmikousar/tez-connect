@@ -8,6 +8,34 @@ st.set_page_config(
     layout="wide"
 )
 # -----------------------------
+# Sample Data
+# -----------------------------
+
+businesses = [
+    {
+        "Company": "ABC Textiles",
+        "Industry": "Manufacturing",
+        "Location": "Bangalore",
+        "Services": "Cotton Fabrics, Textile Export",
+        "Verified": "Yes"
+    },
+    {
+        "Company": "FreshMart Pvt Ltd",
+        "Industry": "Food Supply",
+        "Location": "Mysore",
+        "Services": "Organic Food Distribution",
+        "Verified": "Yes"
+    },
+    {
+        "Company": "Growthify Agency",
+        "Industry": "Marketing",
+        "Location": "Mumbai",
+        "Services": "Digital Marketing, Branding",
+        "Verified": "No"
+    },
+]
+
+# -----------------------------
 # Sidebar
 # -----------------------------
 
