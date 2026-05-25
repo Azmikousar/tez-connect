@@ -140,22 +140,74 @@ text-decoration: underline;
 <a href="#">Terms of Service</a>
 </div>
 """
-
 st.markdown(footer, unsafe_allow_html=True)
-
-
-
-st.markdown("## 📞 CONTACT INFO")
+# Professional Contact Information Section
 
 st.markdown("""
-📧 **support@tezconnect.in**
+<style>
+.contact-box {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e6e6e6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
 
-📞 **+91 73961 80986**
+.contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
 
-📞 **+91 97031 80986**
+.contact-item {
+    font-size: 16px;
+    color: #374151;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
 
-📍 **Plot No. 45, 3rd Floor, Cyber Heights,  
-Hitech City Main Road,  
-Madhapur, Hyderabad – 500081,  
-Telangana, India**
-""")
+.contact-label {
+    font-weight: bold;
+    color: #111827;
+}
+</style>
+
+<div class="contact-box">
+
+<div class="contact-title">
+📞 CONTACT INFO
+</div>
+
+<div class="contact-item">
+<span class="contact-label">📧 Email:</span>
+support@tezconnect.in
+</div>
+
+<div class="contact-item">
+<span class="contact-label">📞 Phone:</span>
++91 73961 80986
+</div>
+
+<div class="contact-item">
+<span class="contact-label">📞 Support:</span>
++91 97031 80986
+</div>
+
+<div class="contact-item">
+<span class="contact-label">📍 Address:</span><br>
+Plot No. 45, 3rd Floor, Cyber Heights,<br>
+Hitech City Main Road,<br>
+Madhapur, Hyderabad – 500081,<br>
+Telangana, India
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
