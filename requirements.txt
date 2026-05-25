@@ -1,1 +1,2 @@
-pip install streamlit streamlit-option-menu pillow
+streamlit 
+streamlit-option-menu pillow
