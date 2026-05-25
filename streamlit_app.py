@@ -206,6 +206,97 @@ Telangana, India
 
 </div>
 """, unsafe_allow_html=True)
+# Professional Solutions Section
+
+st.markdown("""
+<style>
+
+.solutions-container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.solutions-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.solution-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 18px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.solution-card:hover {
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.solution-text {
+    font-size: 18px;
+    color: #374151;
+    font-weight: 500;
+}
+
+</style>
+
+<div class="solutions-container">
+
+<div class="solutions-title">
+🚀 SOLUTIONS
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+📈 Social Media Marketing & Lead Generation
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+🔍 Google Business Ads & SEO Services
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+💬 WhatsApp Marketing & Automations
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+🌐 Custom Websites & Mobile Apps Development
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+🏢 Custom ERP Software Implementations
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+🌐 IoT Systems & Technology Integration
+</div>
+</div>
+
+<div class="solution-card">
+<div class="solution-text">
+🎨 Content Creation & Branding Services
+</div>
+</div>
+
+</div>
+""", unsafe_allow_html=True)
 
 
 
