@@ -24,6 +24,39 @@ menu = st.sidebar.radio(
         "Profile"
     ]
 )
+if menu == "Home":
+    st.title("🚀 Tez Connect")
+    st.subheader("B2B Networking Marketplace")
+
+    st.markdown(
+        """
+        Welcome to **Tez Connect**, a platform where businesses can:
+
+        - Connect with suppliers
+        - Find distributors
+        - Discover business opportunities
+        - Post marketplace requirements
+        - Network with startups and enterprises
+        """
+    )
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.metric("Businesses", "10,000+")
+
+    with col2:
+        st.metric("Verified Companies", "5,000+")
+
+    with col3:
+        st.metric("Marketplace Leads", "50,000+")
+
+    st.divider()
+
+    st.subheader("🌟 Featured Businesses")
+
+    df = pd.DataFrame(businesses)
+    st.dataframe(df, use_container_width=True)
 
 
 
