@@ -103,3 +103,42 @@ elif menu == "AI Assistant":
         st.write(
             f"AI Suggestion: Connect with suppliers related to '{question}'"
         )
+        # Professional Footer
+st.markdown("---")
+
+footer = """
+<style>
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #ffffff;
+color: gray;
+text-align: center;
+padding: 10px;
+font-size: 14px;
+border-top: 1px solid #e6e6e6;
+}
+
+.footer a {
+color: #1f77b4;
+text-decoration: none;
+margin: 0 10px;
+}
+
+.footer a:hover {
+text-decoration: underline;
+}
+</style>
+
+<div class="footer">
+© 2026 <b>TEZ CONNECT</b>. ALL RIGHTS RESERVED.
+|
+<a href="#">Privacy Policy</a>
+|
+<a href="#">Terms of Service</a>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
